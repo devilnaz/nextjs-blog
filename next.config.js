@@ -15,7 +15,7 @@ module.exports = {
    */
   images: {
     loader: "akamai",
-    path: `/nextjs-blog/_next/image`,
+    path: `/nextjs-blog`,
   },
   basePath: basePath,
 };
