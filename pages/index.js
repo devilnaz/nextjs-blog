@@ -21,12 +21,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Главный герой «Золотого ветра». Мечтает стать главой мафии «Ганг Стар» и присоединяется к команде «Пассионе», будучи самым молодым членом, становился
-          де-факто новым лидером группы.
+          The protagonist of the "Golden Wind". He dreams of becoming the head of the Gang Star mafia and joins the Passione team, being the youngest member,
+          becoming the de facto new leader of the group.
         </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>Famous for saying: "My name is Giovanni Giorgio, but everybody calls me Giorgio".</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
