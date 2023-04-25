@@ -14,7 +14,8 @@ module.exports = {
    * @see https://nextjs.org/blog/next-12-3#disable-image-optimization-stable
    */
   images: {
-    path: `${basePath}/_next/image`,
+    path: `${basePath}/`,
+    unoptimized: true,
   },
   basePath: basePath,
 };
