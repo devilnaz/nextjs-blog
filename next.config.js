@@ -14,6 +14,7 @@ module.exports = {
    */
   images: {
     unoptimized: true,
+    path: isProd ? "/nextjs-blog/public" : "",
   },
   basePath: isProd ? "/nextjs-blog" : "",
 };
