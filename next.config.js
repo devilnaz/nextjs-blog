@@ -17,6 +17,7 @@ module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./lib/loader.js",
   },
 };
