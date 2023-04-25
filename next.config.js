@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/nextjs-blog" : "";
 
 module.exports = {
   /**
@@ -13,8 +14,7 @@ module.exports = {
    * @see https://nextjs.org/blog/next-12-3#disable-image-optimization-stable
    */
   images: {
-    unoptimized: true,
-    path: isProd ? "/nextjs-blog/public" : "",
+    path: `${basePath}/_next/image`,
   },
-  basePath: isProd ? "/nextjs-blog" : "",
+  basePath: basePath,
 };
