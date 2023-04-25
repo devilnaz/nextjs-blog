@@ -1,12 +1,13 @@
+const isProd = process.env.NODE_ENV === "production";
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  assetPrefix: isProd ? "/your-github-repo-name/" : "",
   images: {
-    loader: "akamai",
-    path: "https://devilnaz.github.io/nextjs-blog/",
+    unoptimized: true,
   },
-  assetPrefix: "/nextjs-blog/",
 };
 
 export default nextConfig;
