@@ -4,7 +4,7 @@
 const nextConfig = {
   images: {
     loader: "akamai",
-    path: "",
+    path: "https://devilnaz.github.io/nextjs-blog/",
   },
   assetPrefix: "/nextjs-blog/",
 };
