@@ -15,11 +15,7 @@ module.exports = {
    */
   images: {
     loader: "akamai",
-    remotePatterns: [
-      {
-        pathname: "/nextjs-blog/**",
-      },
-    ],
+    path: "",
   },
   basePath: basePath,
 };
