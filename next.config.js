@@ -1,22 +1,19 @@
-const withPlugins = require("next-compose-plugins");
-const optimizedImages = require("next-optimized-images");
+// next.config.js
 
-module.exports = withPlugins([
-  [
-    optimizedImages,
-    {
-      mozjpeg: {
-        quality: 80,
-      },
-      pngquant: {
-        speed: 3,
-        strip: true,
-        verbose: true,
-      },
-    },
-  ],
-  {
-    assetPrefix: "/nextjs-blog/",
-    basePath: "/nextjs-blog",
-  },
-]);
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = "";
+let basePath = "/";
+
+if (isGithubActions) {
+  // trim off `<owner>/`
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
+
+module.exports = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+};
