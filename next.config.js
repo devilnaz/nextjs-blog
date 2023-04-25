@@ -17,13 +17,6 @@ module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "devilnaz.github.io",
-        port: "",
-        pathname: "/nextjs-blog/**",
-      },
-    ],
+    unoptimized: true,
   },
 };
