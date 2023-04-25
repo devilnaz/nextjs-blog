@@ -14,8 +14,6 @@ module.exports = {
    * @see https://nextjs.org/blog/next-12-3#disable-image-optimization-stable
    */
   images: {
-    loader: "akamai",
-    path: "",
+    unoptimized: true,
   },
-  basePath: basePath,
 };
