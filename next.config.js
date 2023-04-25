@@ -15,7 +15,7 @@ module.exports = {
    */
   images: {
     loader: "akamai",
-    path: `${basePath}/`,
+    path: `${basePath}/_next/image`,
   },
   basePath: basePath,
 };
