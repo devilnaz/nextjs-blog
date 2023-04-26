@@ -7,11 +7,11 @@ import Link from "next/link";
 const name = "Giovanni Giorgio";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://devilnaz.github.io/nextjs-blog/favicon.ico" />
         <meta name="description" content="Learn how to build a personal website using Next.js" />
         <meta
           property="og:image"

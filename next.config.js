@@ -18,6 +18,6 @@ module.exports = {
   basePath: basePath,
   images: {
     loader: "custom",
-    loaderFile: "./lib/loader.js",
+    loaderFile: "./lib/loader.ts",
   },
 };
